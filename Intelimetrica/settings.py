@@ -20,12 +20,13 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*=p(pjx_2zm)g545v5qyy7heb5@us=ve83-b!_x90kaqibq9-b'
+# SECRET_KEY = '*=p(pjx_2zm)g545v5qyy7heb5@us=ve83-b!_x90kaqibq9-b'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['intelimetricapi.herokuapp.com']
 
 
 # Application definition
