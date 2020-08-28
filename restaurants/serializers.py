@@ -12,7 +12,7 @@ class RestaurantSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Restaurant
-        fields = ('rating', 'name', 'site', 'email', 'phone', 'street', 'city', 'state', 'lat', 'lng')
+        fields = ('id', 'rating', 'name', 'site', 'email', 'phone', 'street', 'city', 'state', 'lat', 'lng')
 
 
 class CreateRestaurantSerializer(serializers.ModelSerializer):
@@ -22,4 +22,4 @@ class CreateRestaurantSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Restaurant
-        fields = ('rating', 'name', 'site', 'email', 'phone', 'street', 'city', 'state', 'lat', 'lng')
+        fields = ('id','rating', 'name', 'site', 'email', 'phone', 'street', 'city', 'state', 'lat', 'lng')
